@@ -12,9 +12,9 @@ if __name__ == '__main__':
                         help='Whether the scrapper should disable the usage of gpu or not',
                         action='store_true')
 
-    parser.add_argument('--start-maximized', dest='start_maximized',
+    parser.add_argument('--no-start-maximized', dest='start_maximized',
                         help='Whether the Window should start maximized or not',
-                        action='store_true', default=True)
+                        action='store_false')
 
     args = parser.parse_args()
     scrapper = EdgeScrapper()
